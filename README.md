@@ -2,7 +2,9 @@
 
 ## Summary
 The **Personal Time Tracker** web application is vulnerable to **Reflected Cross-Site Scripting (XSS)** in the project name input.  
-An attacker can inject malicious JavaScript code that executes immediately in the victim’s browser, leading to client-side compromise.
+An attacker can inject malicious JavaScript code that executes immediately in the victim’s browser.
+
+*Source Code:* [Time Tracker V1](https://www.sourcecodester.com/javascript/18346/personal-time-tracker-using-html-css-and-javascript-source-code.html)
 
 ---
 

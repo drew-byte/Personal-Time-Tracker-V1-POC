@@ -1,4 +1,4 @@
-# Vulnerability Report – Reflected Cross-Site Scripting (XSS) in Personal Time Tracker
+# Reflected Cross-Site Scripting (XSS) in Personal Time Tracker V1
 
 ## Summary
 The **Personal Time Tracker** web application is vulnerable to **Reflected Cross-Site Scripting (XSS)** in the project name input.  
@@ -38,15 +38,14 @@ newProject.innerHTML = `
 
 In the Project Name field, enter:
 
-```<img src=x onerror=alert('XSS')>```
+```javascript
+<img src=x onerror=alert('XSS')>
+```
 
 #### Step 2 – Trigger Execution
 
 Upon form submission, the payload is reflected back into the DOM.
-
 The malicious script executes instantly in the user’s browser.
-
-Example Result:
 
 An alert box is triggered:
 
